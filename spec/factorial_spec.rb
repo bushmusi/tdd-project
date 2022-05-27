@@ -13,5 +13,8 @@ describe 'TDD factorial method' do
 
       it 'factorial logic the input is zero' do
       	  expect(Solver.new.factorial(0)).to eq 1
+      end
+      it 'factorial logic not numeric input' do
+      	 expect(Solver.new.factorial("2")).to eq 'invalid input'
       end	
 end	
