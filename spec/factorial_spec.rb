@@ -7,8 +7,11 @@ describe 'TDD factorial method' do
       	 mock.factorial(5)
       end
 
-      it 'factorial logic the input is zero or postivite number' do
+      it 'factorial logic the input shuld be zero or postivite number' do
       	  expect(Solver.new.factorial(-1)).to eq 'invalid number'
-      	 
+      end
+
+      it 'factorial logic the input is zero' do
+      	  expect(Solver.new.factorial(0)).to eq 1
       end	
 end	
