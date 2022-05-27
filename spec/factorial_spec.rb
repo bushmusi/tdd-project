@@ -4,5 +4,6 @@ describe 'TDD factorial method' do
       it 'existance of factorial method in Solver class' do
       	 mock = instance_double(Solver)
       	 expect(mock).to receive(:factorial)
+      	 mock.factorial
       end	
 end	
