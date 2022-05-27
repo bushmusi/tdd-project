@@ -1,5 +1,6 @@
 # Solver class
 class Solver
-	def factorial
+	def factorial(number)
+		
 	end	
 end
