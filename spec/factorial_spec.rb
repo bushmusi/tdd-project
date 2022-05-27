@@ -8,7 +8,9 @@ describe 'TDD factorial method' do
       end
 
       it 'factorial logic the input shuld be zero or postivite number' do
-      	  expect(Solver.new.factorial(-1)).to eq 'invalid number'
+      	  expect do
+      	  Solver.new.factorial(-1)
+      	  end.to raise_error 'invalid number'
       end
 
       it 'factorial logic the input is zero' do
