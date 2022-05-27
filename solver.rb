@@ -7,4 +7,13 @@ class Solver
 
     number * factorial(number - 1)
   end
+
+  def get_string(str = nil)
+    str
+  end
+
+  def reverse
+    str = get_string
+    str.reverse
+  end
 end
